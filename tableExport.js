@@ -76,7 +76,7 @@ THE SOFTWARE.*/
 					}
 					var base64data = "base64," + $.base64.encode(tdData);
 					//window.open('data:application/'+defaults.type+';filename=exportData;' + base64data);
-                    $('<a style="display:none" href="data:application/'+defaults.type+';filename=exportData;'+base64data+'" download="'+defaults.tableName.toString()+'.'+defaults.type+'"><span></span></a>').appendTo(document.body).find('span').trigger("click").parent().remove();
+                    $('<a style="display:none" href="data:application/'+defaults.type+';filename=exportData;'+base64data+'" download="data.'+defaults.type+'"><span></span></a>').appendTo(document.body).find('span').trigger("click").parent().remove();
 				}else if(defaults.type == 'sql'){
 				
 					// Header
